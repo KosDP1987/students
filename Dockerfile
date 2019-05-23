@@ -1,1 +1,1 @@
-FROM UBuntnu 18
+FROM UBuntnu18
