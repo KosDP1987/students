@@ -1,5 +1,5 @@
-FROM openjdk8
+FROM openjdk
 MAINTAINER Kostiantyn 
 COPY target/rd-1.0.25-release.jar /opt/rd-1.0.25-release.jar
 
-EXPOSE 6666
+EXPOSE 8080
