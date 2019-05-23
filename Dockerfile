@@ -1,3 +1,3 @@
 FROM openjdk 
-COPY target/rd-1.0.25-release.jar /opt/rd-1.0.25-release.jar
+COPY target/*.jar /opt/*
 EXPOSE 8080
