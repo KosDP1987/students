@@ -1,7 +1,9 @@
 FROM openjdk 
-#COPY target/*.jar ./
-mv *.jar file.jar
+WORKDIR /home/app
+COPY target/*.jar 
+
+#mv *.jar file.jar
 #RUN cd /tmp/ && java -jar *.jar 
 
-EXPOSE 80
 EXPOSE 8080
+CMD ["java", "-jar","*.jar"]
