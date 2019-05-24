@@ -1,3 +1,6 @@
-#FROM openjdk 
-#COPY target/*.jar /opt/
-#EXPOSE 8080
+FROM openjdk 
+COPY target/*.jar /opt/
+CMD cd /opt/ && java -jar *.jar 
+
+EXPOSE 80
+EXPOSE 8080
