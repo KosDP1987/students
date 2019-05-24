@@ -1,6 +1,6 @@
 FROM openjdk 
 WORKDIR /home/app
-COPY target/*.jar 
+COPY target/*.jar /home/app
 
 #mv *.jar file.jar
 #RUN cd /tmp/ && java -jar *.jar 
