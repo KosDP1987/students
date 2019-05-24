@@ -1,8 +1,5 @@
 FROM openjdk 
-#COPY target/*.jar /opt/
-#CMD cd /opt/ && java -jar *.jar 
-
-COPY target/*.jar /tmp/
+COPY target/*.jar ./
 #RUN cd /tmp/ && java -jar *.jar 
 
 EXPOSE 80
