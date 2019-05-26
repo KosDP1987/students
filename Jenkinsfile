@@ -27,5 +27,4 @@ node {
         version: '1.0.${BUILD_NUMBER}-release'  
 	    
   }
-  //triggers { cron('* * * * *')} // every minutes
 }
