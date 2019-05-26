@@ -2,13 +2,14 @@ node {
   stage('Clone GIT source'){
         git url: 'https://github.com/KosDP1987/students.git' // my GIT
   }
+	
   stage('Mvn Package'){
         def mvnHome = tool name: 'default', type: 'maven'
         def mvnCMD = "${mvnHome}/bin/mvn"
         sh "${mvnCMD} clean package" 
   }
   stage ('Docker build')  {
-        def dockerfile = 'Dockerfile'
+        //def dockerfile = 'Dockerfile'
 		sh 'docker build -t image:v1 .'
         //def customImage = docker.build("testproject:${env.BUILD_ID}", "-f ${dockerfile} ./dockerfiles") 
   }
